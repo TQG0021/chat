@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI智选商城</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="messages" id="messages">
+            <div class="message bot">
+                <img src="bot-avatar.png" alt="Bot">
+                <div class="message-content">
+                    <p>你好，我是AI智选商城AI导购</p>
+                </div>
+            </div>
+            <div class="message bot">
+                <img src="bot-avatar.png" alt="Bot">
+                <div class="message-content">
+                    <p>您好！我是您的专属AI导购助手。我可以为您推荐合适的商品，解答购买疑问，还能根据您的需求找到最适合您的产品。请告诉我您今天想了解什么，或者需要购买什么商品，我会全力为您服务！</p>
+                </div>
+                  </div>
+        </div>
+        <div id="loading" class="loading" style="display: none;">加载中...</div>
+        <div class="input-container">
+            <input id="chat-input" type="text" placeholder="输入消息..." />
+            <button onclick="sendMessage()">发送</button>
+            <div class="dropdown">
+                <button onclick="toggleDropdown(event)">更多</button>
+                <div class="dropdown-content" id="dropdownMenu">
+                    <div class="dropdown-item" onclick="toggleTheme()">
+                        <span>浅色/深色</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
