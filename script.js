@@ -75,7 +75,7 @@ function sendMessage() {
         loadingElement.style.display = 'block';
     }
     
-    const apiKey = 'sk-cbda0a80f3794a889be6158bd04da596';
+    const apiKey = 'sk-76c452e55375448e9031d282025ae677';
     const appId = '2db5e6ba780c4cc3b0dc9db616462e38';
     const endpoint = 'https://dashscope.aliyuncs.com/api/v1/apps/'+appId+'/completion';
     const payload = {
